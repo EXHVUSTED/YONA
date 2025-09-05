@@ -10,7 +10,8 @@ import Profile from './pages/profile/Profile'
 import Settings from './pages/Settings/Settings'
 import Dashboard from './pages/Dashboard/Dashboard'
 
-function App() {
+export default function App() {
+
   return (
     <Router>
       <Routes>
@@ -31,5 +32,3 @@ function App() {
     </Router>
   )
 }
-
-export default App
