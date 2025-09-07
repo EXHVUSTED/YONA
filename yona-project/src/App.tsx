@@ -9,6 +9,8 @@ import About from './pages/About'
 import Profile from './pages/profile/Profile'
 import Settings from './pages/Settings/Settings'
 import Dashboard from './pages/Dashboard/Dashboard'
+import Lessons from './pages/lessons/Lessons'
+import LessonPage from './pages/lessons/LessonPage'
 
 export default function App() {
 
@@ -19,8 +21,14 @@ export default function App() {
           <Route path="/" element={<Home />} /> {/* "/" */}
           <Route path="/about" element={<About />} /> {/* "/about" */}
           <Route path="/profile" element={<Profile />} /> {/* "/profile" */}
-        </Route>
+          <Route path="/settings" element={<Settings />} /> {/* "/settings" */}
+          <Route path='lessons'>
+            <Route index element={<Lessons />}/>
+            <Route path=":id" element={<LessonPage />} />
+          </Route>
         <Route>
+        </Route>
+          {/*administration*/}
           <Route path="/dashboard" element={<DashboardLayout/>}>
             <Route index element={<Dashboard />} />
             <Route path="profile" element={<Profile/>} />

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Разминка для начинающих",
+    "category": "warmup",
+    "difficulty": "beginner",
+    "videoUrl": "https://www.youtube.com/watch?v=XXXXX",
+    "tags": ["растяжка", "новички"]
+  },
+  {
+    "id": 2,
+    "title": "Кардио-тренировка",
+    "category": "cardio",
+    "difficulty": "intermediate",
+    "videoUrl": "https://www.youtube.com/watch?v=YYYYY",
+    "tags": ["выносливость", "сжигание калорий"]
+  }
+]
